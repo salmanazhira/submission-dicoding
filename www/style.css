@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: "Maven Pro", "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+header {
+  display: inline;
+}
+ 
+nav {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  background-color: white;
+  padding: 3px;
+  position: sticky;
+  top: 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+ 
+nav ul {
+  padding-inline: 4rem;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+ 
+nav li {
+  list-style-type: none;
+}
+ 
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: .5rem 1.5rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+}
+ 
+nav a:hover {
+  background-color: #ffc200;
+  color: white;
+}
+ 
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+ 
+aside {
+  flex: 1;
+  
+}
+aside img{
+  width: 300px;
+}
+ 
+h2 {
+  color: black;
+}
+ 
+h3 {
+  color: black;
+}
+
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: black;
+}
+footer .social-media{
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+  height: 100%;
+  display: flex;
+}
+footer .social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: black;
+ 
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+ 
+footer .social-media li {
+  list-style-type: none;
+}
+ 
+footer .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all .1s ease-in-out;
+}
+ 
+footer .social-media li a:hover {
+  color: #ffc200;
+}
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.jumbotron .description{
+  flex: 1 1;
+}
+.jumbotron .description .title{
+  
+  font-size: 4.5rem;
+  margin-block: 1rem;
+}
+.jumbotron .description .title .judul{
+  color: #ffc200;
+}
+.jumbotron .description p{
+  line-height: 1.7rem;
+  font-size: 1.1rem;
+  color:  #5b5b5b;
+}
+
+.jumbotron .image {
+  flex: 1;
+  display: flex;
+}
+
+.jumbotron .image img{
+  margin: auto;
+  min-width: 250px;
+  width: 500px;
+}
+
+
+.profile header {
+  text-align: center;
+}
+ 
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  main aside {
+    align-self: center;
+    
+  }
+}
+ 
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+ 
+  main aside {
+    align-self: stretch;
+  }
+}
